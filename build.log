@@ -1,0 +1,613 @@
+Initialized native services in: /home/user/.gradle/native
+Initialized jansi services in: /home/user/.gradle/native
+Received JVM installation metadata from '/usr/lib/jvm/java-17-openjdk-amd64': {JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64, JAVA_VERSION=17.0.15, JAVA_VENDOR=Ubuntu, RUNTIME_NAME=OpenJDK Runtime Environment, RUNTIME_VERSION=17.0.15+6-Ubuntu-0ubuntu120.04, VM_NAME=OpenJDK 64-Bit Server VM, VM_VERSION=17.0.15+6-Ubuntu-0ubuntu120.04, VM_VENDOR=Ubuntu, OS_ARCH=amd64}
+Removing 0 daemon stop events from registry
+Starting a Gradle Daemon (subsequent builds will be faster)
+Starting process 'Gradle build daemon'. Working directory: /home/user/.gradle/daemon/8.9 Command: /usr/lib/jvm/java-17-openjdk-amd64/bin/java -XX:+UseParallelGC --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.prefs/java.util.prefs=ALL-UNNAMED --add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED --add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED --add-opens=java.base/java.nio.charset=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED -Xmx2048m -Dfile.encoding=UTF-8 -Duser.country=VE -Duser.language=es -Duser.variant -cp /home/user/.gradle/wrapper/dists/gradle-8.9-bin/ewhjzjhi1n7rvqjesqepwqpi0/gradle-8.9/lib/gradle-daemon-main-8.9.jar -javaagent:/home/user/.gradle/wrapper/dists/gradle-8.9-bin/ewhjzjhi1n7rvqjesqepwqpi0/gradle-8.9/lib/agents/gradle-instrumentation-agent-8.9.jar org.gradle.launcher.daemon.bootstrap.GradleDaemon 8.9
+Successfully started process 'Gradle build daemon'
+An attempt to start the daemon took 1.516 secs.
+The client will now receive all logging from the daemon (pid: 8198). The daemon log file: /home/user/.gradle/daemon/8.9/daemon-8198.out.log
+Starting build in new daemon [memory: 1.7 GiB]
+Using 4 worker leases.
+Received JVM installation metadata from '/usr/lib/jvm/java-17-openjdk-amd64': {JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64, JAVA_VERSION=17.0.15, JAVA_VENDOR=Ubuntu, RUNTIME_NAME=OpenJDK Runtime Environment, RUNTIME_VERSION=17.0.15+6-Ubuntu-0ubuntu120.04, VM_NAME=OpenJDK 64-Bit Server VM, VM_VERSION=17.0.15+6-Ubuntu-0ubuntu120.04, VM_VENDOR=Ubuntu, OS_ARCH=amd64}
+Watching the file system is configured to be enabled if available
+Now considering [/home/user/FOTOS-TECNICA-INTELITEC] as hierarchies to watch
+File system watching is active
+Starting Build
+Settings evaluated using settings file '/home/user/FOTOS-TECNICA-INTELITEC/settings.gradle.kts'.
+Using local directory build cache for the root build (location = /home/user/.gradle/caches/build-cache-1, removeUnusedEntriesAfter = 7 days).
+Projects loaded. Root project using build file '/home/user/FOTOS-TECNICA-INTELITEC/build.gradle.kts'.
+Included projects: [root project 'FOTOS-TECNICA-INTELITEC']
+
+> Configure project :
+Evaluating root project 'FOTOS-TECNICA-INTELITEC' using build file '/home/user/FOTOS-TECNICA-INTELITEC/build.gradle.kts'.
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+A problem occurred configuring root project 'FOTOS-TECNICA-INTELITEC'.
+> Could not resolve all artifacts for configuration ':classpath'.
+   > Could not download gradle-8.7.3.jar (com.android.tools.build:gradle:8.7.3)
+      > Could not get resource 'https://maven.aliyun.com/repository/google/com/android/tools/build/gradle/8.7.3/gradle-8.7.3.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/google/com/android/tools/build/gradle/8.7.3/gradle-8.7.3.jar'.
+            > maven.aliyun.com
+   > Could not download gradle-settings-api-8.7.3.jar (com.android.tools.build:gradle-settings-api:8.7.3)
+      > Could not get resource 'https://maven.aliyun.com/repository/google/com/android/tools/build/gradle-settings-api/8.7.3/gradle-settings-api-8.7.3.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/google/com/android/tools/build/gradle-settings-api/8.7.3/gradle-settings-api-8.7.3.jar'.
+            > maven.aliyun.com
+   > Could not download lint-model-31.7.3.jar (com.android.tools.lint:lint-model:31.7.3)
+      > Could not get resource 'https://maven.aliyun.com/repository/google/com/android/tools/lint/lint-model/31.7.3/lint-model-31.7.3.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/google/com/android/tools/lint/lint-model/31.7.3/lint-model-31.7.3.jar'.
+            > maven.aliyun.com: Fallo temporal en la resolución del nombre
+   > Could not download builder-8.7.3.jar (com.android.tools.build:builder:8.7.3)
+      > Could not get resource 'https://maven.aliyun.com/repository/google/com/android/tools/build/builder/8.7.3/builder-8.7.3.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/google/com/android/tools/build/builder/8.7.3/builder-8.7.3.jar'.
+            > maven.aliyun.com
+   > Could not download manifest-merger-31.7.3.jar (com.android.tools.build:manifest-merger:31.7.3)
+      > Could not get resource 'https://maven.aliyun.com/repository/google/com/android/tools/build/manifest-merger/31.7.3/manifest-merger-31.7.3.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/google/com/android/tools/build/manifest-merger/31.7.3/manifest-merger-31.7.3.jar'.
+            > maven.aliyun.com
+   > Could not download sdk-common-31.7.3.jar (com.android.tools:sdk-common:31.7.3)
+      > Could not get resource 'https://maven.aliyun.com/repository/google/com/android/tools/sdk-common/31.7.3/sdk-common-31.7.3.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/google/com/android/tools/sdk-common/31.7.3/sdk-common-31.7.3.jar'.
+            > maven.aliyun.com
+   > Could not download sdklib-31.7.3.jar (com.android.tools:sdklib:31.7.3)
+      > Could not get resource 'https://maven.aliyun.com/repository/google/com/android/tools/sdklib/31.7.3/sdklib-31.7.3.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/google/com/android/tools/sdklib/31.7.3/sdklib-31.7.3.jar'.
+            > maven.aliyun.com
+   > Could not download repository-31.7.3.jar (com.android.tools:repository:31.7.3)
+      > Could not get resource 'https://maven.aliyun.com/repository/google/com/android/tools/repository/31.7.3/repository-31.7.3.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/google/com/android/tools/repository/31.7.3/repository-31.7.3.jar'.
+            > maven.aliyun.com
+   > Could not download aaptcompiler-8.7.3.jar (com.android.tools.build:aaptcompiler:8.7.3)
+      > Could not get resource 'https://maven.aliyun.com/repository/google/com/android/tools/build/aaptcompiler/8.7.3/aaptcompiler-8.7.3.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/google/com/android/tools/build/aaptcompiler/8.7.3/aaptcompiler-8.7.3.jar'.
+            > maven.aliyun.com
+   > Could not download tracker-31.7.3.jar (com.android.tools.analytics-library:tracker:31.7.3)
+      > Could not get resource 'https://maven.aliyun.com/repository/google/com/android/tools/analytics-library/tracker/31.7.3/tracker-31.7.3.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/google/com/android/tools/analytics-library/tracker/31.7.3/tracker-31.7.3.jar'.
+            > maven.aliyun.com
+   > Could not download shared-31.7.3.jar (com.android.tools.analytics-library:shared:31.7.3)
+      > Could not get resource 'https://maven.aliyun.com/repository/google/com/android/tools/analytics-library/shared/31.7.3/shared-31.7.3.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/google/com/android/tools/analytics-library/shared/31.7.3/shared-31.7.3.jar'.
+            > maven.aliyun.com
+   > Could not download databinding-compiler-common-8.7.3.jar (androidx.databinding:databinding-compiler-common:8.7.3)
+      > Could not get resource 'https://maven.aliyun.com/repository/google/androidx/databinding/databinding-compiler-common/8.7.3/databinding-compiler-common-8.7.3.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/google/androidx/databinding/databinding-compiler-common/8.7.3/databinding-compiler-common-8.7.3.jar'.
+            > maven.aliyun.com
+   > Could not download android-test-plugin-host-emulator-control-proto-31.7.3.jar (com.android.tools.utp:android-test-plugin-host-emulator-control-proto:31.7.3)
+      > Could not get resource 'https://maven.aliyun.com/repository/google/com/android/tools/utp/android-test-plugin-host-emulator-control-proto/31.7.3/android-test-plugin-host-emulator-control-proto-31.7.3.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/google/com/android/tools/utp/android-test-plugin-host-emulator-control-proto/31.7.3/android-test-plugin-host-emulator-control-proto-31.7.3.jar'.
+            > maven.aliyun.com
+   > Could not download android-test-plugin-host-retention-proto-31.7.3.jar (com.android.tools.utp:android-test-plugin-host-retention-proto:31.7.3)
+      > Could not get resource 'https://maven.aliyun.com/repository/google/com/android/tools/utp/android-test-plugin-host-retention-proto/31.7.3/android-test-plugin-host-retention-proto-31.7.3.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/google/com/android/tools/utp/android-test-plugin-host-retention-proto/31.7.3/android-test-plugin-host-retention-proto-31.7.3.jar'.
+            > maven.aliyun.com
+   > Could not download builder-model-8.7.3.jar (com.android.tools.build:builder-model:8.7.3)
+      > Could not get resource 'https://maven.aliyun.com/repository/google/com/android/tools/build/builder-model/8.7.3/builder-model-8.7.3.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/google/com/android/tools/build/builder-model/8.7.3/builder-model-8.7.3.jar'.
+            > maven.aliyun.com
+   > Could not download gradle-api-8.7.3.jar (com.android.tools.build:gradle-api:8.7.3)
+      > Could not get resource 'https://maven.aliyun.com/repository/google/com/android/tools/build/gradle-api/8.7.3/gradle-api-8.7.3.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/google/com/android/tools/build/gradle-api/8.7.3/gradle-api-8.7.3.jar'.
+            > maven.aliyun.com
+   > Could not download builder-test-api-8.7.3.jar (com.android.tools.build:builder-test-api:8.7.3)
+      > Could not get resource 'https://maven.aliyun.com/repository/google/com/android/tools/build/builder-test-api/8.7.3/builder-test-api-8.7.3.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/google/com/android/tools/build/builder-test-api/8.7.3/builder-test-api-8.7.3.jar'.
+            > maven.aliyun.com
+   > Could not download ddmlib-31.7.3.jar (com.android.tools.ddms:ddmlib:31.7.3)
+      > Could not get resource 'https://maven.aliyun.com/repository/google/com/android/tools/ddms/ddmlib/31.7.3/ddmlib-31.7.3.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/google/com/android/tools/ddms/ddmlib/31.7.3/ddmlib-31.7.3.jar'.
+            > maven.aliyun.com
+   > Could not download layoutlib-api-31.7.3.jar (com.android.tools.layoutlib:layoutlib-api:31.7.3)
+      > Could not get resource 'https://maven.aliyun.com/repository/google/com/android/tools/layoutlib/layoutlib-api/31.7.3/layoutlib-api-31.7.3.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/google/com/android/tools/layoutlib/layoutlib-api/31.7.3/layoutlib-api-31.7.3.jar'.
+            > maven.aliyun.com
+   > Could not download dvlib-31.7.3.jar (com.android.tools:dvlib:31.7.3)
+      > Could not get resource 'https://maven.aliyun.com/repository/google/com/android/tools/dvlib/31.7.3/dvlib-31.7.3.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/google/com/android/tools/dvlib/31.7.3/dvlib-31.7.3.jar'.
+            > maven.aliyun.com
+   > Could not download common-31.7.3.jar (com.android.tools:common:31.7.3)
+      > Could not get resource 'https://maven.aliyun.com/repository/google/com/android/tools/common/31.7.3/common-31.7.3.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/google/com/android/tools/common/31.7.3/common-31.7.3.jar'.
+            > maven.aliyun.com
+   > Could not download kotlin-stdlib-jdk8-1.9.20.jar (org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.9.20)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.9.20/kotlin-stdlib-jdk8-1.9.20.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.9.20/kotlin-stdlib-jdk8-1.9.20.jar'.
+            > maven.aliyun.com
+   > Could not download jetifier-processor-1.0.0-beta10.jar (com.android.tools.build.jetifier:jetifier-processor:1.0.0-beta10)
+      > Could not get resource 'https://maven.aliyun.com/repository/google/com/android/tools/build/jetifier/jetifier-processor/1.0.0-beta10/jetifier-processor-1.0.0-beta10.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/google/com/android/tools/build/jetifier/jetifier-processor/1.0.0-beta10/jetifier-processor-1.0.0-beta10.jar'.
+            > maven.aliyun.com
+   > Could not download jetifier-core-1.0.0-beta10.jar (com.android.tools.build.jetifier:jetifier-core:1.0.0-beta10)
+      > Could not get resource 'https://maven.aliyun.com/repository/google/com/android/tools/build/jetifier/jetifier-core/1.0.0-beta10/jetifier-core-1.0.0-beta10.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/google/com/android/tools/build/jetifier/jetifier-core/1.0.0-beta10/jetifier-core-1.0.0-beta10.jar'.
+            > maven.aliyun.com
+   > Could not download kotlin-reflect-1.9.23.jar (org.jetbrains.kotlin:kotlin-reflect:1.9.23)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/org/jetbrains/kotlin/kotlin-reflect/1.9.23/kotlin-reflect-1.9.23.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/org/jetbrains/kotlin/kotlin-reflect/1.9.23/kotlin-reflect-1.9.23.jar'.
+            > maven.aliyun.com
+   > Could not download kotlin-stdlib-jdk7-1.9.20.jar (org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.9.20)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.9.20/kotlin-stdlib-jdk7-1.9.20.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.9.20/kotlin-stdlib-jdk7-1.9.20.jar'.
+            > maven.aliyun.com
+   > Could not download kotlin-stdlib-1.9.23.jar (org.jetbrains.kotlin:kotlin-stdlib:1.9.23)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/org/jetbrains/kotlin/kotlin-stdlib/1.9.23/kotlin-stdlib-1.9.23.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/org/jetbrains/kotlin/kotlin-stdlib/1.9.23/kotlin-stdlib-1.9.23.jar'.
+            > maven.aliyun.com
+   > Could not download annotations-13.0.jar (org.jetbrains:annotations:13.0)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/org/jetbrains/annotations/13.0/annotations-13.0.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/org/jetbrains/annotations/13.0/annotations-13.0.jar'.
+            > maven.aliyun.com
+   > Could not download kotlin-gradle-plugin-model-2.0.21.jar (org.jetbrains.kotlin:kotlin-gradle-plugin-model:2.0.21)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/org/jetbrains/kotlin/kotlin-gradle-plugin-model/2.0.21/kotlin-gradle-plugin-model-2.0.21.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/org/jetbrains/kotlin/kotlin-gradle-plugin-model/2.0.21/kotlin-gradle-plugin-model-2.0.21.jar'.
+            > maven.aliyun.com
+   > Could not download kotlin-gradle-plugin-api-2.0.21.jar (org.jetbrains.kotlin:kotlin-gradle-plugin-api:2.0.21)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/org/jetbrains/kotlin/kotlin-gradle-plugin-api/2.0.21/kotlin-gradle-plugin-api-2.0.21.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/org/jetbrains/kotlin/kotlin-gradle-plugin-api/2.0.21/kotlin-gradle-plugin-api-2.0.21.jar'.
+            > maven.aliyun.com
+   > Could not download kotlin-gradle-plugin-api-2.0.21-gradle85.jar (org.jetbrains.kotlin:kotlin-gradle-plugin-api:2.0.21)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/org/jetbrains/kotlin/kotlin-gradle-plugin-api/2.0.21/kotlin-gradle-plugin-api-2.0.21-gradle85.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/org/jetbrains/kotlin/kotlin-gradle-plugin-api/2.0.21/kotlin-gradle-plugin-api-2.0.21-gradle85.jar'.
+            > maven.aliyun.com
+   > Could not download compose-compiler-gradle-plugin-2.0.21-gradle85.jar (org.jetbrains.kotlin:compose-compiler-gradle-plugin:2.0.21)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/org/jetbrains/kotlin/compose-compiler-gradle-plugin/2.0.21/compose-compiler-gradle-plugin-2.0.21-gradle85.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/org/jetbrains/kotlin/compose-compiler-gradle-plugin/2.0.21/compose-compiler-gradle-plugin-2.0.21-gradle85.jar'.
+            > maven.aliyun.com
+   > Could not download kotlin-gradle-plugin-2.0.21-gradle85.jar (org.jetbrains.kotlin:kotlin-gradle-plugin:2.0.21)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/org/jetbrains/kotlin/kotlin-gradle-plugin/2.0.21/kotlin-gradle-plugin-2.0.21-gradle85.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/org/jetbrains/kotlin/kotlin-gradle-plugin/2.0.21/kotlin-gradle-plugin-2.0.21-gradle85.jar'.
+            > maven.aliyun.com
+   > Could not download bundletool-1.17.1.jar (com.android.tools.build:bundletool:1.17.1)
+      > Could not get resource 'https://maven.aliyun.com/repository/google/com/android/tools/build/bundletool/1.17.1/bundletool-1.17.1.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/google/com/android/tools/build/bundletool/1.17.1/bundletool-1.17.1.jar'.
+            > maven.aliyun.com
+   > Could not download aapt2-proto-8.7.3-12006047.jar (com.android.tools.build:aapt2-proto:8.7.3-12006047)
+      > Could not get resource 'https://maven.aliyun.com/repository/google/com/android/tools/build/aapt2-proto/8.7.3-12006047/aapt2-proto-8.7.3-12006047.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/google/com/android/tools/build/aapt2-proto/8.7.3-12006047/aapt2-proto-8.7.3-12006047.jar'.
+            > maven.aliyun.com
+   > Could not download crash-31.7.3.jar (com.android.tools.analytics-library:crash:31.7.3)
+      > Could not get resource 'https://maven.aliyun.com/repository/google/com/android/tools/analytics-library/crash/31.7.3/crash-31.7.3.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/google/com/android/tools/analytics-library/crash/31.7.3/crash-31.7.3.jar'.
+            > maven.aliyun.com
+   > Could not download lint-typedef-remover-31.7.3.jar (com.android.tools.lint:lint-typedef-remover:31.7.3)
+      > Could not get resource 'https://maven.aliyun.com/repository/google/com/android/tools/lint/lint-typedef-remover/31.7.3/lint-typedef-remover-31.7.3.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/google/com/android/tools/lint/lint-typedef-remover/31.7.3/lint-typedef-remover-31.7.3.jar'.
+            > maven.aliyun.com
+   > Could not download databinding-common-8.7.3.jar (androidx.databinding:databinding-common:8.7.3)
+      > Could not get resource 'https://maven.aliyun.com/repository/google/androidx/databinding/databinding-common/8.7.3/databinding-common-8.7.3.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/google/androidx/databinding/databinding-common/8.7.3/databinding-common-8.7.3.jar'.
+            > maven.aliyun.com
+   > Could not download baseLibrary-8.7.3.jar (com.android.databinding:baseLibrary:8.7.3)
+      > Could not get resource 'https://maven.aliyun.com/repository/google/com/android/databinding/baseLibrary/8.7.3/baseLibrary-8.7.3.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/google/com/android/databinding/baseLibrary/8.7.3/baseLibrary-8.7.3.jar'.
+            > maven.aliyun.com
+   > Could not download android-device-provider-ddmlib-proto-31.7.3.jar (com.android.tools.utp:android-device-provider-ddmlib-proto:31.7.3)
+      > Could not get resource 'https://maven.aliyun.com/repository/google/com/android/tools/utp/android-device-provider-ddmlib-proto/31.7.3/android-device-provider-ddmlib-proto-31.7.3.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/google/com/android/tools/utp/android-device-provider-ddmlib-proto/31.7.3/android-device-provider-ddmlib-proto-31.7.3.jar'.
+            > maven.aliyun.com
+   > Could not download android-device-provider-gradle-proto-31.7.3.jar (com.android.tools.utp:android-device-provider-gradle-proto:31.7.3)
+      > Could not get resource 'https://maven.aliyun.com/repository/google/com/android/tools/utp/android-device-provider-gradle-proto/31.7.3/android-device-provider-gradle-proto-31.7.3.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/google/com/android/tools/utp/android-device-provider-gradle-proto/31.7.3/android-device-provider-gradle-proto-31.7.3.jar'.
+            > maven.aliyun.com
+   > Could not download android-device-provider-profile-proto-31.7.3.jar (com.android.tools.utp:android-device-provider-profile-proto:31.7.3)
+      > Could not get resource 'https://maven.aliyun.com/repository/google/com/android/tools/utp/android-device-provider-profile-proto/31.7.3/android-device-provider-profile-proto-31.7.3.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/google/com/android/tools/utp/android-device-provider-profile-proto/31.7.3/android-device-provider-profile-proto-31.7.3.jar'.
+            > maven.aliyun.com
+   > Could not download android-test-plugin-host-additional-test-output-proto-31.7.3.jar (com.android.tools.utp:android-test-plugin-host-additional-test-output-proto:31.7.3)
+      > Could not get resource 'https://maven.aliyun.com/repository/google/com/android/tools/utp/android-test-plugin-host-additional-test-output-proto/31.7.3/android-test-plugin-host-additional-test-output-proto-31.7.3.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/google/com/android/tools/utp/android-test-plugin-host-additional-test-output-proto/31.7.3/android-test-plugin-host-additional-test-output-proto-31.7.3.jar'.
+            > maven.aliyun.com
+   > Could not download android-test-plugin-host-coverage-proto-31.7.3.jar (com.android.tools.utp:android-test-plugin-host-coverage-proto:31.7.3)
+      > Could not get resource 'https://maven.aliyun.com/repository/google/com/android/tools/utp/android-test-plugin-host-coverage-proto/31.7.3/android-test-plugin-host-coverage-proto-31.7.3.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/google/com/android/tools/utp/android-test-plugin-host-coverage-proto/31.7.3/android-test-plugin-host-coverage-proto-31.7.3.jar'.
+            > maven.aliyun.com
+   > Could not download android-test-plugin-host-logcat-proto-31.7.3.jar (com.android.tools.utp:android-test-plugin-host-logcat-proto:31.7.3)
+      > Could not get resource 'https://maven.aliyun.com/repository/google/com/android/tools/utp/android-test-plugin-host-logcat-proto/31.7.3/android-test-plugin-host-logcat-proto-31.7.3.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/google/com/android/tools/utp/android-test-plugin-host-logcat-proto/31.7.3/android-test-plugin-host-logcat-proto-31.7.3.jar'.
+            > maven.aliyun.com
+   > Could not download android-test-plugin-host-apk-installer-proto-31.7.3.jar (com.android.tools.utp:android-test-plugin-host-apk-installer-proto:31.7.3)
+      > Could not get resource 'https://maven.aliyun.com/repository/google/com/android/tools/utp/android-test-plugin-host-apk-installer-proto/31.7.3/android-test-plugin-host-apk-installer-proto-31.7.3.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/google/com/android/tools/utp/android-test-plugin-host-apk-installer-proto/31.7.3/android-test-plugin-host-apk-installer-proto-31.7.3.jar'.
+            > maven.aliyun.com
+   > Could not download android-test-plugin-result-listener-gradle-proto-31.7.3.jar (com.android.tools.utp:android-test-plugin-result-listener-gradle-proto:31.7.3)
+      > Could not get resource 'https://maven.aliyun.com/repository/google/com/android/tools/utp/android-test-plugin-result-listener-gradle-proto/31.7.3/android-test-plugin-result-listener-gradle-proto-31.7.3.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/google/com/android/tools/utp/android-test-plugin-result-listener-gradle-proto/31.7.3/android-test-plugin-result-listener-gradle-proto-31.7.3.jar'.
+            > maven.aliyun.com
+   > Could not download transform-api-2.0.0-deprecated-use-gradle-api.jar (com.android.tools.build:transform-api:2.0.0-deprecated-use-gradle-api)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/com/android/tools/build/transform-api/2.0.0-deprecated-use-gradle-api/transform-api-2.0.0-deprecated-use-gradle-api.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/com/android/tools/build/transform-api/2.0.0-deprecated-use-gradle-api/transform-api-2.0.0-deprecated-use-gradle-api.jar'.
+            > maven.aliyun.com
+   > Could not download httpmime-4.5.6.jar (org.apache.httpcomponents:httpmime:4.5.6)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/org/apache/httpcomponents/httpmime/4.5.6/httpmime-4.5.6.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/org/apache/httpcomponents/httpmime/4.5.6/httpmime-4.5.6.jar'.
+            > maven.aliyun.com
+   > Could not download commons-io-2.13.0.jar (commons-io:commons-io:2.13.0)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/commons-io/commons-io/2.13.0/commons-io-2.13.0.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/commons-io/commons-io/2.13.0/commons-io-2.13.0.jar'.
+            > maven.aliyun.com
+   > Could not download asm-commons-9.6.jar (org.ow2.asm:asm-commons:9.6)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/org/ow2/asm/asm-commons/9.6/asm-commons-9.6.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/org/ow2/asm/asm-commons/9.6/asm-commons-9.6.jar'.
+            > maven.aliyun.com
+   > Could not download asm-util-9.6.jar (org.ow2.asm:asm-util:9.6)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/org/ow2/asm/asm-util/9.6/asm-util-9.6.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/org/ow2/asm/asm-util/9.6/asm-util-9.6.jar'.
+            > maven.aliyun.com
+   > Could not download asm-analysis-9.6.jar (org.ow2.asm:asm-analysis:9.6)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/org/ow2/asm/asm-analysis/9.6/asm-analysis-9.6.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/org/ow2/asm/asm-analysis/9.6/asm-analysis-9.6.jar'.
+            > maven.aliyun.com
+   > Could not download asm-tree-9.6.jar (org.ow2.asm:asm-tree:9.6)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/org/ow2/asm/asm-tree/9.6/asm-tree-9.6.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/org/ow2/asm/asm-tree/9.6/asm-tree-9.6.jar'.
+            > maven.aliyun.com
+   > Could not download asm-9.6.jar (org.ow2.asm:asm:9.6)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/org/ow2/asm/asm/9.6/asm-9.6.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/org/ow2/asm/asm/9.6/asm-9.6.jar'.
+            > maven.aliyun.com
+   > Could not download apkzlib-8.7.3.jar (com.android.tools.build:apkzlib:8.7.3)
+      > Could not get resource 'https://maven.aliyun.com/repository/google/com/android/tools/build/apkzlib/8.7.3/apkzlib-8.7.3.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/google/com/android/tools/build/apkzlib/8.7.3/apkzlib-8.7.3.jar'.
+            > maven.aliyun.com
+   > Could not download bcpkix-jdk18on-1.77.jar (org.bouncycastle:bcpkix-jdk18on:1.77)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/org/bouncycastle/bcpkix-jdk18on/1.77/bcpkix-jdk18on-1.77.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/org/bouncycastle/bcpkix-jdk18on/1.77/bcpkix-jdk18on-1.77.jar'.
+            > maven.aliyun.com
+   > Could not download jaxb-runtime-2.3.2.jar (org.glassfish.jaxb:jaxb-runtime:2.3.2)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/org/glassfish/jaxb/jaxb-runtime/2.3.2/jaxb-runtime-2.3.2.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/org/glassfish/jaxb/jaxb-runtime/2.3.2/jaxb-runtime-2.3.2.jar'.
+            > maven.aliyun.com
+   > Could not download jopt-simple-4.9.jar (net.sf.jopt-simple:jopt-simple:4.9)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/net/sf/jopt-simple/jopt-simple/4.9/jopt-simple-4.9.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/net/sf/jopt-simple/jopt-simple/4.9/jopt-simple-4.9.jar'.
+            > maven.aliyun.com
+   > Could not download javapoet-1.10.0.jar (com.squareup:javapoet:1.10.0)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/com/squareup/javapoet/1.10.0/javapoet-1.10.0.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/com/squareup/javapoet/1.10.0/javapoet-1.10.0.jar'.
+            > maven.aliyun.com
+   > Could not download protobuf-java-util-3.22.3.jar (com.google.protobuf:protobuf-java-util:3.22.3)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/com/google/protobuf/protobuf-java-util/3.22.3/protobuf-java-util-3.22.3.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/com/google/protobuf/protobuf-java-util/3.22.3/protobuf-java-util-3.22.3.jar'.
+            > maven.aliyun.com
+   > Could not download grpc-protobuf-1.57.0.jar (io.grpc:grpc-protobuf:1.57.0)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/io/grpc/grpc-protobuf/1.57.0/grpc-protobuf-1.57.0.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/io/grpc/grpc-protobuf/1.57.0/grpc-protobuf-1.57.0.jar'.
+            > maven.aliyun.com
+   > Could not download tink-1.7.0.jar (com.google.crypto.tink:tink:1.7.0)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/com/google/crypto/tink/tink/1.7.0/tink-1.7.0.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/com/google/crypto/tink/tink/1.7.0/tink-1.7.0.jar'.
+            > maven.aliyun.com
+   > Could not download protos-31.7.3.jar (com.android.tools.analytics-library:protos:31.7.3)
+      > Could not get resource 'https://maven.aliyun.com/repository/google/com/android/tools/analytics-library/protos/31.7.3/protos-31.7.3.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/google/com/android/tools/analytics-library/protos/31.7.3/protos-31.7.3.jar'.
+            > maven.aliyun.com
+   > Could not download proto-google-common-protos-2.17.0.jar (com.google.api.grpc:proto-google-common-protos:2.17.0)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/com/google/api/grpc/proto-google-common-protos/2.17.0/proto-google-common-protos-2.17.0.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/com/google/api/grpc/proto-google-common-protos/2.17.0/proto-google-common-protos-2.17.0.jar'.
+            > maven.aliyun.com
+   > Could not download protobuf-java-3.22.3.jar (com.google.protobuf:protobuf-java:3.22.3)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/com/google/protobuf/protobuf-java/3.22.3/protobuf-java-3.22.3.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/com/google/protobuf/protobuf-java/3.22.3/protobuf-java-3.22.3.jar'.
+            > maven.aliyun.com
+   > Could not download grpc-netty-1.57.0.jar (io.grpc:grpc-netty:1.57.0)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/io/grpc/grpc-netty/1.57.0/grpc-netty-1.57.0.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/io/grpc/grpc-netty/1.57.0/grpc-netty-1.57.0.jar'.
+            > maven.aliyun.com
+   > Could not download grpc-core-1.57.0.jar (io.grpc:grpc-core:1.57.0)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/io/grpc/grpc-core/1.57.0/grpc-core-1.57.0.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/io/grpc/grpc-core/1.57.0/grpc-core-1.57.0.jar'.
+            > maven.aliyun.com
+   > Could not download kotlin-build-statistics-2.0.21.jar (org.jetbrains.kotlin:kotlin-build-statistics:2.0.21)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/org/jetbrains/kotlin/kotlin-build-statistics/2.0.21/kotlin-build-statistics-2.0.21.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/org/jetbrains/kotlin/kotlin-build-statistics/2.0.21/kotlin-build-statistics-2.0.21.jar'.
+            > maven.aliyun.com
+   > Could not download gson-2.10.1.jar (com.google.code.gson:gson:2.10.1)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar'.
+            > maven.aliyun.com
+   > Could not download grpc-stub-1.57.0.jar (io.grpc:grpc-stub:1.57.0)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/io/grpc/grpc-stub/1.57.0/grpc-stub-1.57.0.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/io/grpc/grpc-stub/1.57.0/grpc-stub-1.57.0.jar'.
+            > maven.aliyun.com
+   > Could not download core-proto-0.0.9-alpha02.jar (com.google.testing.platform:core-proto:0.0.9-alpha02)
+      > Could not get resource 'https://maven.aliyun.com/repository/google/com/google/testing/platform/core-proto/0.0.9-alpha02/core-proto-0.0.9-alpha02.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/google/com/google/testing/platform/core-proto/0.0.9-alpha02/core-proto-0.0.9-alpha02.jar'.
+            > maven.aliyun.com
+   > Could not download tensorflow-lite-metadata-0.1.0-rc2.jar (org.tensorflow:tensorflow-lite-metadata:0.1.0-rc2)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/org/tensorflow/tensorflow-lite-metadata/0.1.0-rc2/tensorflow-lite-metadata-0.1.0-rc2.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/org/tensorflow/tensorflow-lite-metadata/0.1.0-rc2/tensorflow-lite-metadata-0.1.0-rc2.jar'.
+            > maven.aliyun.com
+   > Could not download flatbuffers-java-1.12.0.jar (com.google.flatbuffers:flatbuffers-java:1.12.0)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/com/google/flatbuffers/flatbuffers-java/1.12.0/flatbuffers-java-1.12.0.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/com/google/flatbuffers/flatbuffers-java/1.12.0/flatbuffers-java-1.12.0.jar'.
+            > maven.aliyun.com
+   > Could not download kotlin-gradle-plugin-idea-proto-2.0.21.jar (org.jetbrains.kotlin:kotlin-gradle-plugin-idea-proto:2.0.21)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/org/jetbrains/kotlin/kotlin-gradle-plugin-idea-proto/2.0.21/kotlin-gradle-plugin-idea-proto-2.0.21.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/org/jetbrains/kotlin/kotlin-gradle-plugin-idea-proto/2.0.21/kotlin-gradle-plugin-idea-proto-2.0.21.jar'.
+            > maven.aliyun.com
+   > Could not download kotlin-gradle-plugin-idea-2.0.21.jar (org.jetbrains.kotlin:kotlin-gradle-plugin-idea:2.0.21)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/org/jetbrains/kotlin/kotlin-gradle-plugin-idea/2.0.21/kotlin-gradle-plugin-idea-2.0.21.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/org/jetbrains/kotlin/kotlin-gradle-plugin-idea/2.0.21/kotlin-gradle-plugin-idea-2.0.21.jar'.
+            > maven.aliyun.com
+   > Could not download kotlin-klib-commonizer-api-2.0.21.jar (org.jetbrains.kotlin:kotlin-klib-commonizer-api:2.0.21)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/org/jetbrains/kotlin/kotlin-klib-commonizer-api/2.0.21/kotlin-klib-commonizer-api-2.0.21.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/org/jetbrains/kotlin/kotlin-klib-commonizer-api/2.0.21/kotlin-klib-commonizer-api-2.0.21.jar'.
+            > maven.aliyun.com
+   > Could not download kotlin-build-tools-api-2.0.21.jar (org.jetbrains.kotlin:kotlin-build-tools-api:2.0.21)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/org/jetbrains/kotlin/kotlin-build-tools-api/2.0.21/kotlin-build-tools-api-2.0.21.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/org/jetbrains/kotlin/kotlin-build-tools-api/2.0.21/kotlin-build-tools-api-2.0.21.jar'.
+            > maven.aliyun.com
+   > Could not download kotlin-compiler-runner-2.0.21.jar (org.jetbrains.kotlin:kotlin-compiler-runner:2.0.21)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/org/jetbrains/kotlin/kotlin-compiler-runner/2.0.21/kotlin-compiler-runner-2.0.21.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/org/jetbrains/kotlin/kotlin-compiler-runner/2.0.21/kotlin-compiler-runner-2.0.21.jar'.
+            > maven.aliyun.com
+   > Could not download kotlin-native-utils-2.0.21.jar (org.jetbrains.kotlin:kotlin-native-utils:2.0.21)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/org/jetbrains/kotlin/kotlin-native-utils/2.0.21/kotlin-native-utils-2.0.21.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/org/jetbrains/kotlin/kotlin-native-utils/2.0.21/kotlin-native-utils-2.0.21.jar'.
+            > maven.aliyun.com
+   > Could not download kotlin-util-klib-2.0.21.jar (org.jetbrains.kotlin:kotlin-util-klib:2.0.21)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/org/jetbrains/kotlin/kotlin-util-klib/2.0.21/kotlin-util-klib-2.0.21.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/org/jetbrains/kotlin/kotlin-util-klib/2.0.21/kotlin-util-klib-2.0.21.jar'.
+            > maven.aliyun.com
+   > Could not download kotlin-compiler-embeddable-2.0.21.jar (org.jetbrains.kotlin:kotlin-compiler-embeddable:2.0.21)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/org/jetbrains/kotlin/kotlin-compiler-embeddable/2.0.21/kotlin-compiler-embeddable-2.0.21.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/org/jetbrains/kotlin/kotlin-compiler-embeddable/2.0.21/kotlin-compiler-embeddable-2.0.21.jar'.
+            > maven.aliyun.com
+   > Could not download jimfs-1.1.jar (com.google.jimfs:jimfs:1.1)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/com/google/jimfs/jimfs/1.1/jimfs-1.1.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/com/google/jimfs/jimfs/1.1/jimfs-1.1.jar'.
+            > maven.aliyun.com
+   > Could not download grpc-context-1.57.0.jar (io.grpc:grpc-context:1.57.0)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/io/grpc/grpc-context/1.57.0/grpc-context-1.57.0.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/io/grpc/grpc-context/1.57.0/grpc-context-1.57.0.jar'.
+            > maven.aliyun.com
+   > Could not download grpc-protobuf-lite-1.57.0.jar (io.grpc:grpc-protobuf-lite:1.57.0)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/io/grpc/grpc-protobuf-lite/1.57.0/grpc-protobuf-lite-1.57.0.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/io/grpc/grpc-protobuf-lite/1.57.0/grpc-protobuf-lite-1.57.0.jar'.
+            > maven.aliyun.com
+   > Could not download grpc-api-1.57.0.jar (io.grpc:grpc-api:1.57.0)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/io/grpc/grpc-api/1.57.0/grpc-api-1.57.0.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/io/grpc/grpc-api/1.57.0/grpc-api-1.57.0.jar'.
+            > maven.aliyun.com
+   > Could not download guava-32.0.1-jre.jar (com.google.guava:guava:32.0.1-jre)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/com/google/guava/guava/32.0.1-jre/guava-32.0.1-jre.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/com/google/guava/guava/32.0.1-jre/guava-32.0.1-jre.jar'.
+            > maven.aliyun.com
+   > Could not download dagger-2.28.3.jar (com.google.dagger:dagger:2.28.3)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/com/google/dagger/dagger/2.28.3/dagger-2.28.3.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/com/google/dagger/dagger/2.28.3/dagger-2.28.3.jar'.
+            > maven.aliyun.com
+   > Could not download javax.inject-1.jar (javax.inject:javax.inject:1)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/javax/inject/javax.inject/1/javax.inject-1.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/javax/inject/javax.inject/1/javax.inject-1.jar'.
+            > maven.aliyun.com
+   > Could not download kxml2-2.3.0.jar (net.sf.kxml:kxml2:2.3.0)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/net/sf/kxml/kxml2/2.3.0/kxml2-2.3.0.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/net/sf/kxml/kxml2/2.3.0/kxml2-2.3.0.jar'.
+            > maven.aliyun.com
+   > Could not download bcutil-jdk18on-1.77.jar (org.bouncycastle:bcutil-jdk18on:1.77)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/org/bouncycastle/bcutil-jdk18on/1.77/bcutil-jdk18on-1.77.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/org/bouncycastle/bcutil-jdk18on/1.77/bcutil-jdk18on-1.77.jar'.
+            > maven.aliyun.com
+   > Could not download bcprov-jdk18on-1.77.jar (org.bouncycastle:bcprov-jdk18on:1.77)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/org/bouncycastle/bcprov-jdk18on/1.77/bcprov-jdk18on-1.77.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/org/bouncycastle/bcprov-jdk18on/1.77/bcprov-jdk18on-1.77.jar'.
+            > maven.aliyun.com
+   > Could not download trove4j-1.0.20200330.jar (org.jetbrains.intellij.deps:trove4j:1.0.20200330)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/org/jetbrains/intellij/deps/trove4j/1.0.20200330/trove4j-1.0.20200330.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/org/jetbrains/intellij/deps/trove4j/1.0.20200330/trove4j-1.0.20200330.jar'.
+            > maven.aliyun.com
+   > Could not download commons-compress-1.21.jar (org.apache.commons:commons-compress:1.21)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar'.
+            > maven.aliyun.com
+   > Could not download httpclient-4.5.14.jar (org.apache.httpcomponents:httpclient:4.5.14)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/org/apache/httpcomponents/httpclient/4.5.14/httpclient-4.5.14.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/org/apache/httpcomponents/httpclient/4.5.14/httpclient-4.5.14.jar'.
+            > maven.aliyun.com
+   > Could not download httpcore-4.4.16.jar (org.apache.httpcomponents:httpcore:4.4.16)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/org/apache/httpcomponents/httpcore/4.4.16/httpcore-4.4.16.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/org/apache/httpcomponents/httpcore/4.4.16/httpcore-4.4.16.jar'.
+            > maven.aliyun.com
+   > Could not download javax.activation-1.2.0.jar (com.sun.activation:javax.activation:1.2.0)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/com/sun/activation/javax.activation/1.2.0/javax.activation-1.2.0.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/com/sun/activation/javax.activation/1.2.0/javax.activation-1.2.0.jar'.
+            > maven.aliyun.com
+   > Could not download signflinger-8.7.3.jar (com.android:signflinger:8.7.3)
+      > Could not get resource 'https://maven.aliyun.com/repository/google/com/android/signflinger/8.7.3/signflinger-8.7.3.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/google/com/android/signflinger/8.7.3/signflinger-8.7.3.jar'.
+            > maven.aliyun.com
+   > Could not download zipflinger-8.7.3.jar (com.android:zipflinger:8.7.3)
+      > Could not get resource 'https://maven.aliyun.com/repository/google/com/android/zipflinger/8.7.3/zipflinger-8.7.3.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/google/com/android/zipflinger/8.7.3/zipflinger-8.7.3.jar'.
+            > maven.aliyun.com
+   > Could not download annotations-31.7.3.jar (com.android.tools:annotations:31.7.3)
+      > Could not get resource 'https://maven.aliyun.com/repository/google/com/android/tools/annotations/31.7.3/annotations-31.7.3.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/google/com/android/tools/annotations/31.7.3/annotations-31.7.3.jar'.
+            > maven.aliyun.com
+   > Could not download jna-platform-5.6.0.jar (net.java.dev.jna:jna-platform:5.6.0)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/net/java/dev/jna/jna-platform/5.6.0/jna-platform-5.6.0.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/net/java/dev/jna/jna-platform/5.6.0/jna-platform-5.6.0.jar'.
+            > maven.aliyun.com
+   > Could not download juniversalchardet-1.0.3.jar (com.googlecode.juniversalchardet:juniversalchardet:1.0.3)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/com/googlecode/juniversalchardet/juniversalchardet/1.0.3/juniversalchardet-1.0.3.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/com/googlecode/juniversalchardet/juniversalchardet/1.0.3/juniversalchardet-1.0.3.jar'.
+            > maven.aliyun.com
+   > Could not download javax.annotation-api-1.3.2.jar (javax.annotation:javax.annotation-api:1.3.2)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2.jar'.
+            > maven.aliyun.com
+   > Could not download stax-ex-1.8.1.jar (org.jvnet.staxex:stax-ex:1.8.1)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/org/jvnet/staxex/stax-ex/1.8.1/stax-ex-1.8.1.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/org/jvnet/staxex/stax-ex/1.8.1/stax-ex-1.8.1.jar'.
+            > maven.aliyun.com
+   > Could not download jakarta.xml.bind-api-2.3.2.jar (jakarta.xml.bind:jakarta.xml.bind-api:2.3.2)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/jakarta/xml/bind/jakarta.xml.bind-api/2.3.2/jakarta.xml.bind-api-2.3.2.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/jakarta/xml/bind/jakarta.xml.bind-api/2.3.2/jakarta.xml.bind-api-2.3.2.jar'.
+            > maven.aliyun.com
+   > Could not download txw2-2.3.2.jar (org.glassfish.jaxb:txw2:2.3.2)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/org/glassfish/jaxb/txw2/2.3.2/txw2-2.3.2.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/org/glassfish/jaxb/txw2/2.3.2/txw2-2.3.2.jar'.
+            > maven.aliyun.com
+   > Could not download istack-commons-runtime-3.0.8.jar (com.sun.istack:istack-commons-runtime:3.0.8)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/com/sun/istack/istack-commons-runtime/3.0.8/istack-commons-runtime-3.0.8.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/com/sun/istack/istack-commons-runtime/3.0.8/istack-commons-runtime-3.0.8.jar'.
+            > maven.aliyun.com
+   > Could not download FastInfoset-1.2.16.jar (com.sun.xml.fastinfoset:FastInfoset:1.2.16)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/com/sun/xml/fastinfoset/FastInfoset/1.2.16/FastInfoset-1.2.16.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/com/sun/xml/fastinfoset/FastInfoset/1.2.16/FastInfoset-1.2.16.jar'.
+            > maven.aliyun.com
+   > Could not download jakarta.activation-api-1.2.1.jar (jakarta.activation:jakarta.activation-api:1.2.1)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/jakarta/activation/jakarta.activation-api/1.2.1/jakarta.activation-api-1.2.1.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/jakarta/activation/jakarta.activation-api/1.2.1/jakarta.activation-api-1.2.1.jar'.
+            > maven.aliyun.com
+   > Could not download auto-value-annotations-1.6.2.jar (com.google.auto.value:auto-value-annotations:1.6.2)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/com/google/auto/value/auto-value-annotations/1.6.2/auto-value-annotations-1.6.2.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/com/google/auto/value/auto-value-annotations/1.6.2/auto-value-annotations-1.6.2.jar'.
+            > maven.aliyun.com
+   > Could not download error_prone_annotations-2.18.0.jar (com.google.errorprone:error_prone_annotations:2.18.0)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/com/google/errorprone/error_prone_annotations/2.18.0/error_prone_annotations-2.18.0.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/com/google/errorprone/error_prone_annotations/2.18.0/error_prone_annotations-2.18.0.jar'.
+            > maven.aliyun.com
+   > Could not download jose4j-0.9.5.jar (org.bitbucket.b_c:jose4j:0.9.5)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/org/bitbucket/b_c/jose4j/0.9.5/jose4j-0.9.5.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/org/bitbucket/b_c/jose4j/0.9.5/jose4j-0.9.5.jar'.
+            > maven.aliyun.com
+   > Could not download slf4j-api-1.7.30.jar (org.slf4j:slf4j-api:1.7.30)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar'.
+            > maven.aliyun.com
+   > Could not download jdom2-2.0.6.jar (org.jdom:jdom2:2.0.6)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/org/jdom/jdom2/2.0.6/jdom2-2.0.6.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/org/jdom/jdom2/2.0.6/jdom2-2.0.6.jar'.
+            > maven.aliyun.com
+   > Could not download jsr305-3.0.2.jar (com.google.code.findbugs:jsr305:3.0.2)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar'.
+            > maven.aliyun.com
+   > Could not download j2objc-annotations-2.8.jar (com.google.j2objc:j2objc-annotations:2.8)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/com/google/j2objc/j2objc-annotations/2.8/j2objc-annotations-2.8.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/com/google/j2objc/j2objc-annotations/2.8/j2objc-annotations-2.8.jar'.
+            > maven.aliyun.com
+   > Could not download annotations-4.1.1.4.jar (com.google.android:annotations:4.1.1.4)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/com/google/android/annotations/4.1.1.4/annotations-4.1.1.4.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/com/google/android/annotations/4.1.1.4/annotations-4.1.1.4.jar'.
+            > maven.aliyun.com
+   > Could not download animal-sniffer-annotations-1.23.jar (org.codehaus.mojo:animal-sniffer-annotations:1.23)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/org/codehaus/mojo/animal-sniffer-annotations/1.23/animal-sniffer-annotations-1.23.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/org/codehaus/mojo/animal-sniffer-annotations/1.23/animal-sniffer-annotations-1.23.jar'.
+            > maven.aliyun.com
+   > Could not download perfmark-api-0.26.0.jar (io.perfmark:perfmark-api:0.26.0)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/io/perfmark/perfmark-api/0.26.0/perfmark-api-0.26.0.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/io/perfmark/perfmark-api/0.26.0/perfmark-api-0.26.0.jar'.
+            > maven.aliyun.com
+   > Could not download netty-codec-http2-4.1.93.Final.jar (io.netty:netty-codec-http2:4.1.93.Final)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/io/netty/netty-codec-http2/4.1.93.Final/netty-codec-http2-4.1.93.Final.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/io/netty/netty-codec-http2/4.1.93.Final/netty-codec-http2-4.1.93.Final.jar'.
+            > maven.aliyun.com
+   > Could not download netty-handler-proxy-4.1.93.Final.jar (io.netty:netty-handler-proxy:4.1.93.Final)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/io/netty/netty-handler-proxy/4.1.93.Final/netty-handler-proxy-4.1.93.Final.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/io/netty/netty-handler-proxy/4.1.93.Final/netty-handler-proxy-4.1.93.Final.jar'.
+            > maven.aliyun.com
+   > Could not download netty-codec-http-4.1.93.Final.jar (io.netty:netty-codec-http:4.1.93.Final)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/io/netty/netty-codec-http/4.1.93.Final/netty-codec-http-4.1.93.Final.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/io/netty/netty-codec-http/4.1.93.Final/netty-codec-http-4.1.93.Final.jar'.
+            > maven.aliyun.com
+   > Could not download netty-handler-4.1.93.Final.jar (io.netty:netty-handler:4.1.93.Final)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/io/netty/netty-handler/4.1.93.Final/netty-handler-4.1.93.Final.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/io/netty/netty-handler/4.1.93.Final/netty-handler-4.1.93.Final.jar'.
+            > maven.aliyun.com
+   > Could not download netty-transport-native-unix-common-4.1.93.Final.jar (io.netty:netty-transport-native-unix-common:4.1.93.Final)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/io/netty/netty-transport-native-unix-common/4.1.93.Final/netty-transport-native-unix-common-4.1.93.Final.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/io/netty/netty-transport-native-unix-common/4.1.93.Final/netty-transport-native-unix-common-4.1.93.Final.jar'.
+            > maven.aliyun.com
+   > Could not download checker-qual-3.33.0.jar (org.checkerframework:checker-qual:3.33.0)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/org/checkerframework/checker-qual/3.33.0/checker-qual-3.33.0.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/org/checkerframework/checker-qual/3.33.0/checker-qual-3.33.0.jar'.
+            > maven.aliyun.com
+   > Could not download commons-codec-1.11.jar (commons-codec:commons-codec:1.11)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/commons-codec/commons-codec/1.11/commons-codec-1.11.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/commons-codec/commons-codec/1.11/commons-codec-1.11.jar'.
+            > maven.aliyun.com
+   > Could not download apksig-8.7.3.jar (com.android.tools.build:apksig:8.7.3)
+      > Could not get resource 'https://maven.aliyun.com/repository/google/com/android/tools/build/apksig/8.7.3/apksig-8.7.3.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/google/com/android/tools/build/apksig/8.7.3/apksig-8.7.3.jar'.
+            > maven.aliyun.com
+   > Could not download javawriter-2.5.0.jar (com.squareup:javawriter:2.5.0)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/com/squareup/javawriter/2.5.0/javawriter-2.5.0.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/com/squareup/javawriter/2.5.0/javawriter-2.5.0.jar'.
+            > maven.aliyun.com
+   > Could not download kotlin-gradle-plugin-annotations-2.0.21.jar (org.jetbrains.kotlin:kotlin-gradle-plugin-annotations:2.0.21)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/org/jetbrains/kotlin/kotlin-gradle-plugin-annotations/2.0.21/kotlin-gradle-plugin-annotations-2.0.21.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/org/jetbrains/kotlin/kotlin-gradle-plugin-annotations/2.0.21/kotlin-gradle-plugin-annotations-2.0.21.jar'.
+            > maven.aliyun.com
+   > Could not download kotlin-tooling-core-2.0.21.jar (org.jetbrains.kotlin:kotlin-tooling-core:2.0.21)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/org/jetbrains/kotlin/kotlin-tooling-core/2.0.21/kotlin-tooling-core-2.0.21.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/org/jetbrains/kotlin/kotlin-tooling-core/2.0.21/kotlin-tooling-core-2.0.21.jar'.
+            > maven.aliyun.com
+   > Could not download kotlin-daemon-client-2.0.21.jar (org.jetbrains.kotlin:kotlin-daemon-client:2.0.21)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/org/jetbrains/kotlin/kotlin-daemon-client/2.0.21/kotlin-daemon-client-2.0.21.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/org/jetbrains/kotlin/kotlin-daemon-client/2.0.21/kotlin-daemon-client-2.0.21.jar'.
+            > maven.aliyun.com
+   > Could not download kotlinx-coroutines-core-jvm-1.6.4.jar (org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.6.4)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/org/jetbrains/kotlinx/kotlinx-coroutines-core-jvm/1.6.4/kotlinx-coroutines-core-jvm-1.6.4.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/org/jetbrains/kotlinx/kotlinx-coroutines-core-jvm/1.6.4/kotlinx-coroutines-core-jvm-1.6.4.jar'.
+            > maven.aliyun.com
+   > Could not download kotlin-util-io-2.0.21.jar (org.jetbrains.kotlin:kotlin-util-io:2.0.21)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/org/jetbrains/kotlin/kotlin-util-io/2.0.21/kotlin-util-io-2.0.21.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/org/jetbrains/kotlin/kotlin-util-io/2.0.21/kotlin-util-io-2.0.21.jar'.
+            > maven.aliyun.com
+   > Could not download kotlin-daemon-embeddable-2.0.21.jar (org.jetbrains.kotlin:kotlin-daemon-embeddable:2.0.21)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/org/jetbrains/kotlin/kotlin-daemon-embeddable/2.0.21/kotlin-daemon-embeddable-2.0.21.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/org/jetbrains/kotlin/kotlin-daemon-embeddable/2.0.21/kotlin-daemon-embeddable-2.0.21.jar'.
+            > maven.aliyun.com
+   > Could not download failureaccess-1.0.1.jar (com.google.guava:failureaccess:1.0.1)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar'.
+            > maven.aliyun.com
+   > Could not download listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar (com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar'.
+            > maven.aliyun.com
+   > Could not download commons-logging-1.2.jar (commons-logging:commons-logging:1.2)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/commons-logging/commons-logging/1.2/commons-logging-1.2.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/commons-logging/commons-logging/1.2/commons-logging-1.2.jar'.
+            > maven.aliyun.com
+   > Could not download jna-5.6.0.jar (net.java.dev.jna:jna:5.6.0)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/net/java/dev/jna/jna/5.6.0/jna-5.6.0.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/net/java/dev/jna/jna/5.6.0/jna-5.6.0.jar'.
+            > maven.aliyun.com
+   > Could not download netty-codec-socks-4.1.93.Final.jar (io.netty:netty-codec-socks:4.1.93.Final)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/io/netty/netty-codec-socks/4.1.93.Final/netty-codec-socks-4.1.93.Final.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/io/netty/netty-codec-socks/4.1.93.Final/netty-codec-socks-4.1.93.Final.jar'.
+            > maven.aliyun.com
+   > Could not download netty-codec-4.1.93.Final.jar (io.netty:netty-codec:4.1.93.Final)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/io/netty/netty-codec/4.1.93.Final/netty-codec-4.1.93.Final.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/io/netty/netty-codec/4.1.93.Final/netty-codec-4.1.93.Final.jar'.
+            > maven.aliyun.com
+   > Could not download netty-transport-4.1.93.Final.jar (io.netty:netty-transport:4.1.93.Final)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/io/netty/netty-transport/4.1.93.Final/netty-transport-4.1.93.Final.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/io/netty/netty-transport/4.1.93.Final/netty-transport-4.1.93.Final.jar'.
+            > maven.aliyun.com
+   > Could not download netty-buffer-4.1.93.Final.jar (io.netty:netty-buffer:4.1.93.Final)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/io/netty/netty-buffer/4.1.93.Final/netty-buffer-4.1.93.Final.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/io/netty/netty-buffer/4.1.93.Final/netty-buffer-4.1.93.Final.jar'.
+            > maven.aliyun.com
+   > Could not download netty-resolver-4.1.93.Final.jar (io.netty:netty-resolver:4.1.93.Final)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/io/netty/netty-resolver/4.1.93.Final/netty-resolver-4.1.93.Final.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/io/netty/netty-resolver/4.1.93.Final/netty-resolver-4.1.93.Final.jar'.
+            > maven.aliyun.com
+   > Could not download netty-common-4.1.93.Final.jar (io.netty:netty-common:4.1.93.Final)
+      > Could not get resource 'https://maven.aliyun.com/repository/public/io/netty/netty-common/4.1.93.Final/netty-common-4.1.93.Final.jar'.
+         > Could not GET 'https://maven.aliyun.com/repository/public/io/netty/netty-common/4.1.93.Final/netty-common-4.1.93.Final.jar'.
+            > maven.aliyun.com
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 28s
